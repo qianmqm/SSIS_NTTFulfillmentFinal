@@ -1,0 +1,2974 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DailyFF"
+  DTS:DTSID="{5F2004FB-8E10-4DFD-BCEC-A83915005CC8}"
+  DTS:CreationName="FLATFILE">
+  <DTS:PropertyExpression
+    DTS:Name="ConnectionString">@[$Project::FF_ConnectionString]</DTS:PropertyExpression>
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:Format="Delimited"
+      DTS:LocaleID="1033"
+      DTS:HeaderRowDelimiter="_x000D__x000A_"
+      DTS:ColumnNamesInFirstDataRow="True"
+      DTS:RowDelimiter=""
+      DTS:TextQualifier="_x0022_"
+      DTS:CodePage="1252"
+      DTS:ConnectionString="\\ashv2k12DDMSQL\SSIS\NTTFullfillmentExtract\Source\welcomekit.txt">
+      <DTS:FlatFileColumns>
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="24"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="UniqueID"
+          DTS:DTSID="{D8E591F8-7735-4F91-8EBE-A9633DE7D19B}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Reason"
+          DTS:DTSID="{1B5CCC8F-DEE9-4155-9117-B269B2F1A906}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="GroupID"
+          DTS:DTSID="{ACDB4957-A3AC-4662-A876-94FFD4605CA1}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="4"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="OwnerLastFourDigitsSSN"
+          DTS:DTSID="{F8634873-5D05-40E1-9D41-67B3C32DA801}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="8"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="OwnerBirthDate"
+          DTS:DTSID="{3BB9D4AB-A746-4EEF-A0B8-30052CB3DD5D}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="30"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="GroupName"
+          DTS:DTSID="{57743239-4686-42A8-9F23-5015B8205DC2}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="GroupAddressLine1"
+          DTS:DTSID="{0B7857E0-16FC-476F-89B8-9B17E79EEB57}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="GroupAddressLine2"
+          DTS:DTSID="{54615FA3-D49F-48BD-A157-C6E73C16537D}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="GroupAddressCityName"
+          DTS:DTSID="{10ED7B2C-B778-44CA-A897-7459476A0DF9}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="GroupBillingStateCode"
+          DTS:DTSID="{BBAF12CA-8E9D-47E5-9958-65C82FCCB1F8}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="5"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="GroupAddressZipCode"
+          DTS:DTSID="{467271ED-559A-41B8-8C94-61D2EE449148}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="OwnerFirstName"
+          DTS:DTSID="{5A4DA8F5-5869-4AA1-AFAF-6B089E2A3F25}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="OwnerMiddleName"
+          DTS:DTSID="{DE02590C-A530-4888-A3BF-E34E68B76300}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="OwnerLastName"
+          DTS:DTSID="{564F5298-36E0-47A9-AB3E-BC7D470D5443}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="35"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="OwnerAddressLine1"
+          DTS:DTSID="{E868B2E5-14B3-4CAD-B4C8-FA2EBB4FBD8B}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="35"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="OWnerAddressLine2"
+          DTS:DTSID="{4FA0B6EC-7339-4F31-8B7F-A5BAE3C3EB79}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="30"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="OwnerCityName"
+          DTS:DTSID="{93D9326D-106A-4ABD-BF11-054771C9B95E}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="OwnerAddressStateCode"
+          DTS:DTSID="{C91CAFF6-BEEB-4198-AC52-03288B51388A}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="5"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="OwnerAddressZipCode"
+          DTS:DTSID="{76E74C17-C1CB-4718-83E3-075779584FEC}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="4"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="InsuredLastFourDigitsSSN"
+          DTS:DTSID="{B33DC0A9-80A2-4800-92C0-C741DA1D35B7}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="InsuredFirstName"
+          DTS:DTSID="{483DA766-A92B-4AC5-B4D4-6B6D78E4E809}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="InsuredMiddleName"
+          DTS:DTSID="{9D59A01F-4092-44FC-B0CE-6350368F326F}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="InsuredLastName"
+          DTS:DTSID="{E1EA1C3F-D475-4F6E-8934-61823E37F8B0}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="35"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="InsuredAddressLine1"
+          DTS:DTSID="{73B707BC-BFBB-4C17-A118-A2EAA99105A4}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="35"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="InsuredAddressLine2"
+          DTS:DTSID="{8255D950-AAD3-42DF-BB48-B30772773EEB}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="30"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="InsuredCityName"
+          DTS:DTSID="{2E266758-EFD0-484B-82AD-96E2823AC1D6}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="InsuredAddressStateCode"
+          DTS:DTSID="{A9735AF7-2AB0-42B1-A142-A106730EE196}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="5"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="InsuredAddressZipCode"
+          DTS:DTSID="{71429DA5-AEFF-47EF-BC9A-79913EC4D70B}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="12"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID1 PolicyNumber"
+          DTS:DTSID="{B9DC1C3B-696C-4197-A6C5-6E7028C3BA2B}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID1 BenefitSequenceNumber"
+          DTS:DTSID="{F98598AF-F243-4C89-A234-4E866F00BEB1}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID1 ProductGroupDescription"
+          DTS:DTSID="{AA1B02B9-2271-405C-B528-D2D8BC4C565B}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="30"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID1 ProductCode"
+          DTS:DTSID="{85B7FE0D-51C5-4255-8FD2-574BAB28B91E}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="25"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID1 ProductPlanCode"
+          DTS:DTSID="{738B2B33-ADEB-4D8E-9DF9-D5198B2CE2F0}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID1 BenefitCoverageTierCode"
+          DTS:DTSID="{D50E34DA-8BDE-4206-B863-21D6F30BCBE6}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="1"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID1 UnderwritingClassCode"
+          DTS:DTSID="{6829C486-1E9B-417E-9239-47B97F6772F4}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID1 InsuredFirstName"
+          DTS:DTSID="{091E26BA-ACCC-4507-A9E0-B45134116904}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID1 InsuredMiddleName"
+          DTS:DTSID="{98D679CB-A83C-4B0B-8376-1D6DEB750FAE}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID1 InsuredLastName"
+          DTS:DTSID="{6FC03DDE-B671-4B88-8E91-0281C0BBC399}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="41"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID1 BenefitCoverageAmount"
+          DTS:DTSID="{88BD4FB0-5961-496E-BBCE-2D10F2C0AAE7}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID1 InsuredOccupationCode"
+          DTS:DTSID="{56846C55-1C29-4ECF-8C75-5AE89D23053B}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID1 BenefitIssueDate"
+          DTS:DTSID="{93BB4738-98FB-4A2A-8651-9426E5DEA7BF}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID1 BenefitBillingModeCode"
+          DTS:DTSID="{27D9C4C5-A928-4618-B64E-5210FF845480}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="41"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID1 BenefitModelPremiumAmount"
+          DTS:DTSID="{B4B2A973-6135-48D7-AD64-8CD5744CEFAC}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="12"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID2  PolicyNumber"
+          DTS:DTSID="{8B9D1069-E24C-4301-8263-B97475B07D1B}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID2 BenefitSequenceNumber"
+          DTS:DTSID="{CED9D1A5-1828-43D5-BC0E-883E94D0FB72}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID2 ProductGroupDescription"
+          DTS:DTSID="{96157DD8-6825-4372-A15B-D0F85B8898D0}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="30"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID2 ProductCode"
+          DTS:DTSID="{D45757E7-0181-4B37-8654-A4D8AC8562F6}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="25"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID2 ProductPlanCode"
+          DTS:DTSID="{9FB8B4D0-C896-48CB-9B64-52FBE0B83889}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID2 BenefitCoverageTierCode"
+          DTS:DTSID="{BF8ED997-3486-42E6-A3D9-055192FA7546}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="1"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID2 UnderwritingClassCode"
+          DTS:DTSID="{883F00B0-950E-446D-83B6-4FFB20896B98}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID2 InsuredFirstName"
+          DTS:DTSID="{7D8C1284-75F2-4E53-9168-679F6307B327}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID2 InsuredMiddleName"
+          DTS:DTSID="{D8D75B68-7058-45F8-9C84-1329D3F17700}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID2 InsuredLastName"
+          DTS:DTSID="{5EBAA73C-CD7D-4F0E-9DEE-3E2331D3250F}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="41"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID2 BenefitCoverageAmount"
+          DTS:DTSID="{5FA2E0AC-4712-4712-87F4-2A9A5B59C625}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID2 InsuredOccupationCode"
+          DTS:DTSID="{DF5E0666-9DA6-47EC-8BAF-FC90B1F61255}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID2 BenefitIssueDate"
+          DTS:DTSID="{98C33618-A168-42FA-A311-60B322D571F1}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID2 BenefitBillingModeCode"
+          DTS:DTSID="{25C278B5-82CB-4FD1-B707-0CCBF1A477EF}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="41"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID2 BenefitModelPremiumAmount"
+          DTS:DTSID="{9E8EE302-F1DD-4EAC-B484-4C4A38111BCA}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="12"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID3 PolicyNumber"
+          DTS:DTSID="{3BCC6C6F-77F4-474E-8CC0-8AB5CD106EB0}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID3 BenefitSequenceNumber"
+          DTS:DTSID="{0CBF50B7-91CB-4DC4-AB7E-9A8AB9E52992}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID3 ProductGroupDescription"
+          DTS:DTSID="{AD357D4F-85CE-4B95-A4EC-76059EE3EBB3}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="30"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID3 ProductCode"
+          DTS:DTSID="{1EA1FBFA-EC84-4565-BA25-6508E775BB78}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="25"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID3 ProductPlanCode"
+          DTS:DTSID="{710F7274-9983-4AB9-B4B1-4E6C49FC28A3}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID3 BenefitCoverageTierCode"
+          DTS:DTSID="{6666AB99-3DFA-446E-95FF-EA89A436CA60}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="1"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID3 UnderwritingClassCode"
+          DTS:DTSID="{350C523B-F45E-421A-AAF2-5DC4702E0A96}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID3 InsuredFirstName"
+          DTS:DTSID="{667E5101-0F17-42B4-B1FA-48B8C6B315A7}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID3 InsuredMiddleName"
+          DTS:DTSID="{4CAC35F2-AEF1-4081-8B17-8B8FC15919E8}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID3 InsuredLastName"
+          DTS:DTSID="{AE5614B6-8D88-40EB-B6E2-831B93B2E3A6}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="41"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID3 BenefitCoverageAmount"
+          DTS:DTSID="{F9EE9E8B-F2B7-4765-87FF-9AB3526C8AE6}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID3 InsuredOccupationCode"
+          DTS:DTSID="{92529387-74FB-4AD2-A53A-85435A71E613}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID3 BenefitIssueDate"
+          DTS:DTSID="{91C9F03A-033C-415A-A924-E08A67BD7369}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID3 BenefitBillingModeCode"
+          DTS:DTSID="{ED33BDDC-0B01-4C0C-82F0-5BB6450289CC}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="41"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID3 BenefitModelPremiumAmount"
+          DTS:DTSID="{E9F70030-A371-4DB8-9A19-F045C59E7FDF}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="12"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID4 PolicyNumber"
+          DTS:DTSID="{64FF4E59-1D65-47EA-AB09-30F430170A01}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID4 BenefitSequenceNumber"
+          DTS:DTSID="{C98A7D4C-6515-4420-9BE6-EEE71B99AF9E}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID4 ProductGroupDescription"
+          DTS:DTSID="{966D9B56-110F-4F4D-8A0F-60294D9EFFAF}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="30"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID4 ProductCode"
+          DTS:DTSID="{D8CC7183-18D2-4A10-85C9-EF9F91743CC5}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="25"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID4 ProductPlanCode"
+          DTS:DTSID="{99C7CCCD-B95A-496C-91ED-458EF4C8D8F5}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID4 BenefitCoverageTierCode"
+          DTS:DTSID="{5C269CE6-FE69-4089-9315-8EB920D2D0F5}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="1"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID4 UnderwritingClassCode"
+          DTS:DTSID="{4E446261-76E2-48FA-B3D7-D33639ACFECE}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID4 InsuredFirstName"
+          DTS:DTSID="{73C866B0-3397-428B-A636-616F4276704F}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID4 InsuredMiddleName"
+          DTS:DTSID="{E17FB2D4-8720-45CE-87C3-5CC96BFFED4A}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID4 InsuredLastName"
+          DTS:DTSID="{79CDEFA0-EE0B-4985-81C9-9EAF1C3E965E}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="41"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID4 BenefitCoverageAmount"
+          DTS:DTSID="{091125EF-8AE4-4C2E-B080-83BF1FEBC6DB}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID4 InsuredOccupationCode"
+          DTS:DTSID="{83594F7F-83E3-416F-9FF9-4858ED4AC168}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID4 BenefitIssueDate"
+          DTS:DTSID="{CE5028B7-CB54-4D78-A5E4-9C1686D4348C}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID4 BenefitBillingModeCode"
+          DTS:DTSID="{F1667650-1D0B-4E11-9850-0B5BAB97B304}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="41"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID4 BenefitModelPremiumAmount"
+          DTS:DTSID="{734015C3-EB53-40BC-A306-2ADB56453BF1}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="12"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID5 PolicyNumber"
+          DTS:DTSID="{CD731267-B56A-4EB7-BBF2-C3B2787978C0}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID5 BenefitSequenceNumber"
+          DTS:DTSID="{51CDD924-A4FE-4B33-88FB-6958DB1D9AC0}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID5 ProductGroupDescription"
+          DTS:DTSID="{AC38DCBD-CD36-494D-A1E3-D992E28951FA}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="30"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID5 ProductCode"
+          DTS:DTSID="{AEB87C5F-95B9-430B-9219-490B3EC85CEA}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="25"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID5 ProductPlanCode"
+          DTS:DTSID="{B66A5A6A-D2CD-4434-A50B-9C4883C0F6E3}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID5 BenefitCoverageTierCode"
+          DTS:DTSID="{7819F001-42AD-4354-856B-F1597251C7E2}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="1"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID5 UnderwritingClassCode"
+          DTS:DTSID="{DC24E036-E90A-4190-B626-D59D465A093E}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID5 InsuredFirstName"
+          DTS:DTSID="{FAB54971-6E33-4711-94F4-D55ADE070FF4}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID5 InsuredMiddleName"
+          DTS:DTSID="{83DB302D-01EF-4CC5-BC33-4ED0F619F8B0}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID5 InsuredLastName"
+          DTS:DTSID="{C780550B-492C-470F-9117-6BFA8B08181C}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="41"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID5 BenefitCoverageAmount"
+          DTS:DTSID="{6A596804-119A-4A79-87F2-67FDBAA54D69}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID5 InsuredOccupationCode"
+          DTS:DTSID="{3E197974-DFB5-440D-A229-054BDD832C7D}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID5 BenefitIssueDate"
+          DTS:DTSID="{E22FBB86-ED9F-4BB2-8BF2-E477346464AE}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID5 BenefitBillingModeCode"
+          DTS:DTSID="{5294EBA9-A201-4D27-83EE-72D9D5B816EA}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="41"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID5 BenefitModelPremiumAmount"
+          DTS:DTSID="{F2EE5F75-F761-413C-98C1-BD6E63865030}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="12"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID6 PolicyNumber"
+          DTS:DTSID="{DC55623F-0E8C-43BD-9952-6710BC2A1876}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID6 BenefitSequenceNumber"
+          DTS:DTSID="{DC346FB7-741D-4785-A2F6-99630D2DC21D}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID6 ProductGroupDescription"
+          DTS:DTSID="{32EBC2DA-8352-4378-AED0-30D9966215BE}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="30"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID6 ProductCode"
+          DTS:DTSID="{76374728-6596-40D2-88FF-89527CAAC548}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="25"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID6 ProductPlanCode"
+          DTS:DTSID="{12EBF19B-4561-4395-98F6-825A50DD4B95}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID6 BenefitCoverageTierCode"
+          DTS:DTSID="{26F981F1-060F-4615-85C7-3410D2F19993}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="1"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID6 UnderwritingClassCode"
+          DTS:DTSID="{34C3A6E0-FC74-4C78-AD1B-504AD78BE261}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID6 InsuredFirstName"
+          DTS:DTSID="{348C65CB-F461-4E26-BE54-81F0E976D2CC}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID6 InsuredMiddleName"
+          DTS:DTSID="{432BEB15-D315-4054-9763-463B987DCEDF}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID6 InsuredLastName"
+          DTS:DTSID="{57F2475D-160F-4BA3-B71C-8E331EBCE9F9}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="41"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID6 BenefitCoverageAmount"
+          DTS:DTSID="{C6DD5B01-D4A6-457B-BC7C-6284445D0940}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID6 InsuredOccupationCode"
+          DTS:DTSID="{7AF473B2-37E7-4C7F-87FE-0FEB947EEC2C}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID6 BenefitIssueDate"
+          DTS:DTSID="{E07DCF42-DB4C-4972-BB40-A3C59F57E648}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID6 BenefitBillingModeCode"
+          DTS:DTSID="{D2144A4E-4F18-4626-A164-4FC735F79200}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="41"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID6 BenefitModelPremiumAmount"
+          DTS:DTSID="{84EAE60A-0600-4235-89C6-1E518EC320F2}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="12"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID7 PolicyNumber"
+          DTS:DTSID="{E2F96B6A-D48D-496F-A807-0C4A09BDFD28}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID7 BenefitSequenceNumber"
+          DTS:DTSID="{264F9C27-D423-4F87-A95C-560A2DB8132E}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID7 ProductGroupDescription"
+          DTS:DTSID="{3E056E75-436B-4E1E-B06C-461D5922E11E}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="30"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID7 ProductCode"
+          DTS:DTSID="{3AAC770D-A8B3-4FD9-9C9E-748B3AED97F1}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="25"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID7 ProductPlanCode"
+          DTS:DTSID="{704F8590-985E-4DFD-B33E-C7A221F7FA6A}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID7 BenefitCoverageTierCode"
+          DTS:DTSID="{EC57B0D8-5D15-4219-BF68-08AA0288C29B}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="1"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID7 UnderwritingClassCode"
+          DTS:DTSID="{F2C561EB-7196-4961-AE24-161EBAC94133}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID7 InsuredFirstName"
+          DTS:DTSID="{55467AD3-D372-4578-8311-91DEB04593B1}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID7 InsuredMiddleName"
+          DTS:DTSID="{62446AE0-AE03-4C09-810C-6432B437C5B6}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID7 InsuredLastName"
+          DTS:DTSID="{531E84E0-EF9C-44D1-98A8-5FE1417B0D23}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="41"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID7 BenefitCoverageAmount"
+          DTS:DTSID="{B9DB828A-21DE-450D-ACB2-EC1B6A7E06A0}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID7 InsuredOccupationCode"
+          DTS:DTSID="{6BFBA74D-0834-4856-BFC7-52B7E6ECF13A}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID7 BenefitIssueDate"
+          DTS:DTSID="{2889AB08-FA08-4F7A-A3C9-6DC1928DBA21}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID7 BenefitBillingModeCode"
+          DTS:DTSID="{73694636-B2A2-480F-90A6-AB287397FAEB}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="41"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID7 BenefitModelPremiumAmount"
+          DTS:DTSID="{532E7F75-097A-41D5-9D87-3359D6D5CB70}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="12"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID8 PolicyNumber"
+          DTS:DTSID="{7E450A1C-C2FC-444E-90A7-CBC5D50DB9A6}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID8 BenefitSequenceNumber"
+          DTS:DTSID="{3660E3F9-E016-4FB3-8AD6-258C0CBD7BB6}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID8 ProductGroupDescription"
+          DTS:DTSID="{F56DA349-DCCA-4895-B82D-0A9B53C9212A}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="30"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID8 ProductCode"
+          DTS:DTSID="{CBE0D1F1-7ADE-475E-AD17-9E85F6E48DCA}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="25"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID8 ProductPlanCode"
+          DTS:DTSID="{3B181543-DAD1-4358-87B1-525FEBAFD185}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID8 BenefitCoverageTierCode"
+          DTS:DTSID="{DF4C071A-A769-488A-94FF-9E5497F31BE0}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="1"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID8 UnderwritingClassCode"
+          DTS:DTSID="{C0C3277A-5E62-44F0-88F4-9EEB6979337C}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID8 InsuredFirstName"
+          DTS:DTSID="{259CEAF0-B14B-4847-9059-76BA1BF9FE61}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID8 InsuredMiddleName"
+          DTS:DTSID="{B2998960-1D8F-4A1D-B023-C5F1CFE3F4BC}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID8 InsuredLastName"
+          DTS:DTSID="{AAF4DC29-35C5-4040-933A-E83DC53D2A09}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="41"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID8 BenefitCoverageAmount"
+          DTS:DTSID="{F16210F2-F98A-4766-B091-915700038140}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID8 InsuredOccupationCode"
+          DTS:DTSID="{5D229EDE-0962-4A8F-A0C3-ADACAE7F82AE}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID8 BenefitIssueDate"
+          DTS:DTSID="{E83F4A61-7C90-4F20-AA76-E4B351C76E36}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID8 BenefitBillingModeCode"
+          DTS:DTSID="{C98375B6-AD5D-417F-B679-8FAEBFF63B95}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="41"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID8 BenefitModelPremiumAmount"
+          DTS:DTSID="{6F03AEAC-6676-4433-9FE7-F4DE53994D7C}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="12"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID9 PolicyNumber"
+          DTS:DTSID="{6E4909FB-715B-441E-ADF9-8B0449DA45EA}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID9 BenefitSequenceNumber"
+          DTS:DTSID="{16798944-3341-456A-86C5-45F3316C879E}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID9 ProductGroupDescription"
+          DTS:DTSID="{F33A0EF2-49C0-4CF2-BCE9-89020611301F}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="30"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID9 ProductCode"
+          DTS:DTSID="{E8A3473A-B8D4-43F9-B101-E5ACC4A274CA}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="25"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID9 ProductPlanCode"
+          DTS:DTSID="{E14F32B6-8563-40C4-8634-ECE959ABE017}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID9 BenefitCoverageTierCode"
+          DTS:DTSID="{0FB7F496-682F-41DD-8B57-B88731344A72}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="1"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID9 UnderwritingClassCode"
+          DTS:DTSID="{1E7CEB0F-BDE4-4BD2-9D57-F6125E6C29F9}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID9 InsuredFirstName"
+          DTS:DTSID="{9819BAF8-DB37-4705-94D0-15251F506D5E}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID9 InsuredMiddleName"
+          DTS:DTSID="{9A30E212-51F1-4CDD-AAE0-8F42F29949FE}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID9 InsuredLastName"
+          DTS:DTSID="{7118EADD-A259-4583-A16E-0F4E61B018FD}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="41"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID9 BenefitCoverageAmount"
+          DTS:DTSID="{29AB919E-C7DA-46B3-A77B-D05FF6AF32FC}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID9 InsuredOccupationCode"
+          DTS:DTSID="{BF2FA8C8-0F91-410A-A8E1-98697AF8D6BF}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID9 BenefitIssueDate"
+          DTS:DTSID="{B33BADEC-5366-41EE-9C31-D032B53FA3A4}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID9 BenefitBillingModeCode"
+          DTS:DTSID="{179E7BCA-AC5B-4C05-B1EA-882A569FB2AB}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="41"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID9 BenefitModelPremiumAmount"
+          DTS:DTSID="{C366F605-CE90-4C58-A9B4-EE33A5F27190}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="12"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID10 PolicyNumber"
+          DTS:DTSID="{14B2017D-93BF-4F86-B8F5-498860CE89BC}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID10 BenefitSequenceNumber"
+          DTS:DTSID="{AD2D717F-6325-4598-AE2F-2D02C7DB0A80}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID10 ProductGroupDescription"
+          DTS:DTSID="{BA2F6C71-3DEC-4178-86F7-CBB03BB363B9}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="30"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID10 ProductCode"
+          DTS:DTSID="{8024DE50-E82F-4E61-B820-AD5560C96E9A}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="25"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID10 ProductPlanCode"
+          DTS:DTSID="{979FF60C-E319-43CC-B5B0-D0CA2D37DF8D}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID10 BenefitCoverageTierCode"
+          DTS:DTSID="{10E06CFC-1C29-4B93-A869-A8240405E74E}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="1"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID10 UnderwritingClassCode"
+          DTS:DTSID="{B1F4AE11-82FF-4512-A76B-6A88434D97FE}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID10 InsuredFirstName"
+          DTS:DTSID="{A4134B8C-38E5-4519-97E2-76804ED240A2}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID10 InsuredMiddleName"
+          DTS:DTSID="{3E2E7F79-53EA-4C76-9841-839B7B3AFEB2}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID10 InsuredLastName"
+          DTS:DTSID="{D12C8B15-982C-4550-B733-0771EC6DF843}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="41"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID10 BenefitCoverageAmount"
+          DTS:DTSID="{EB2BEC87-81DA-4DCD-9A79-D58B323C5678}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID10 InsuredOccupationCode"
+          DTS:DTSID="{8E05773F-3EBA-4CC6-9B6D-97598A5864BC}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID10 BenefitIssueDate"
+          DTS:DTSID="{129585FD-E386-4146-8219-F66FD716F0DC}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID10 BenefitBillingModeCode"
+          DTS:DTSID="{2E57C557-7E63-4DED-942E-435C877C5038}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="41"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID10 BenefitModelPremiumAmount"
+          DTS:DTSID="{4236577C-5EB3-406E-BBB5-B021C3CB1250}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="12"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID11 PolicyNumber"
+          DTS:DTSID="{29D88EE9-6112-48A7-BE45-DC7E88F43C9D}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID11 BenefitSequenceNumber"
+          DTS:DTSID="{143A51CE-9818-4ECB-BE8A-503319FBB2FD}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID11 ProductGroupDescription"
+          DTS:DTSID="{8813599A-870C-44A0-AC01-3888906969B1}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="30"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID11 ProductCode"
+          DTS:DTSID="{6EF53AD8-CA76-40E7-918E-E8BE720651A4}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="25"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID11 ProductPlanCode"
+          DTS:DTSID="{70D892A0-717E-40B1-A805-BB33B404A287}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID11 BenefitCoverageTierCode"
+          DTS:DTSID="{10C62266-E56D-4B66-815E-FA3289881EF2}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="1"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID11 UnderwritingClassCode"
+          DTS:DTSID="{27013557-257C-49B5-BF5A-DB54264305FB}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID11 InsuredFirstName"
+          DTS:DTSID="{06BD0FCB-841B-4C98-9968-F3AD176E68A8}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID11 InsuredMiddleName"
+          DTS:DTSID="{72EA0541-54D3-4DB6-BE23-8D649F31DAFF}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID11 InsuredLastName"
+          DTS:DTSID="{D0E96B88-EF65-45F1-BAA7-5F49B485EC13}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="41"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID11 BenefitCoverageAmount"
+          DTS:DTSID="{F1EAC965-ACD4-4C54-8AAE-9A1185905D22}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID11 InsuredOccupationCode"
+          DTS:DTSID="{B07AB8FD-8917-4016-81A1-ADCAE15B09A0}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID11 BenefitIssueDate"
+          DTS:DTSID="{799E05F5-7EF2-4365-9ED5-B560CBD38673}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID11 BenefitBillingModeCode"
+          DTS:DTSID="{9E29424F-B87E-4B6E-B661-89239384CC1F}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="41"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID11 BenefitModelPremiumAmount"
+          DTS:DTSID="{DF0061FD-B176-413C-8595-110C43855D1D}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="12"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID12 PolicyNumber"
+          DTS:DTSID="{13FB5C05-2294-480E-8CFE-77BD769D4F55}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID12 BenefitSequenceNumber"
+          DTS:DTSID="{09F6C04A-F41E-44DA-B1DA-2995FC4250CC}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID12 ProductGroupDescription"
+          DTS:DTSID="{4C9A01D2-A9E7-4FA2-94EF-3686E7B2EBB3}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="30"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID12 ProductCode"
+          DTS:DTSID="{AF4E1DFE-9C71-4EDA-9F8C-2B52117E19A0}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="25"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID12 ProductPlanCode"
+          DTS:DTSID="{009F95A4-630D-4E36-8C16-53DFEDBEBBA1}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID12 BenefitCoverageTierCode"
+          DTS:DTSID="{55C6F1B1-069C-4CC9-8AA6-6CA00079C4A5}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="1"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID12 UnderwritingClassCode"
+          DTS:DTSID="{5119CE0F-D714-4C5A-A20B-DFA3AEA51FB6}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID12 InsuredFirstName"
+          DTS:DTSID="{9745A240-C9B6-4BC1-A180-F0255A2A818A}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID12 InsuredMiddleName"
+          DTS:DTSID="{D46C0F90-0409-4562-9679-B11EF5BCBD4B}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID12 InsuredLastName"
+          DTS:DTSID="{B800ADA3-C8B4-4D93-9424-A7B08463EC5E}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="41"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID12 BenefitCoverageAmount"
+          DTS:DTSID="{B2FE3851-C3D7-4739-824A-DC82675C80BF}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID12 InsuredOccupationCode"
+          DTS:DTSID="{C268C2C0-00AF-49BE-980A-FC16E136F74A}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID12 BenefitIssueDate"
+          DTS:DTSID="{81E7F0DB-10D4-4B69-BA50-524A6A66174D}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID12 BenefitBillingModeCode"
+          DTS:DTSID="{E6ACB651-8E2A-4E0C-B71E-8D97D1F26834}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="41"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID12 BenefitModelPremiumAmount"
+          DTS:DTSID="{2DCB7A5D-3F68-440A-A392-D706A85A95C1}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="12"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID13 PolicyNumber"
+          DTS:DTSID="{7ECC1690-AC1D-4398-8264-E6831B4A1855}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID13 BenefitSequenceNumber"
+          DTS:DTSID="{93F21E26-AA83-4F05-9B1A-71ECCECBC3F3}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID13 ProductGroupDescription"
+          DTS:DTSID="{E7D30C9D-E53D-4931-846A-49A0EEEBC158}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="30"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID13 ProductCode"
+          DTS:DTSID="{AC9ED66D-0F05-47A7-8E8D-621419EB5397}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="25"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID13 ProductPlanCode"
+          DTS:DTSID="{F311B875-C15F-44D9-8670-E9AECCEAEE72}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID13 BenefitCoverageTierCode"
+          DTS:DTSID="{864BC12D-F931-456A-B14A-9266D0C7E185}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="1"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID13 UnderwritingClassCode"
+          DTS:DTSID="{BA304FA4-C057-4E53-A272-F76D80B60A25}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID13 InsuredFirstName"
+          DTS:DTSID="{7C172C1C-74BC-4DE6-9F36-47156ECFD1BE}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID13 InsuredMiddleName"
+          DTS:DTSID="{D00DE60E-AA0E-47FF-A4DB-2F8202CE8B05}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID13 InsuredLastName"
+          DTS:DTSID="{77456520-3C52-4AD9-AF7F-23DB4D04FF46}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="41"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID13 BenefitCoverageAmount"
+          DTS:DTSID="{AE202ADD-53CF-45B3-A366-9BF8B5FDB372}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID13 InsuredOccupationCode"
+          DTS:DTSID="{3BFC9F96-B00E-49C2-84FD-93993C2F7E6B}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID13 BenefitIssueDate"
+          DTS:DTSID="{938C8528-E0CE-47BC-B055-8FB6D5DEFF5A}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID13 BenefitBillingModeCode"
+          DTS:DTSID="{B91AE4FB-ED85-47F1-AAEE-50C8CE7EA039}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="41"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID13 BenefitModelPremiumAmount"
+          DTS:DTSID="{260C0416-27B0-448D-8E4D-BD84FA1D2FB8}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="12"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID14 PolicyNumber"
+          DTS:DTSID="{E11AE2D8-6ABC-4610-928A-7D841EDE148D}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID14 BenefitSequenceNumber"
+          DTS:DTSID="{008C83EB-210A-4A9C-A44A-516862A4B73E}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID14 ProductGroupDescription"
+          DTS:DTSID="{A5BEBD24-D3A0-4D89-87C6-B6F98B491E16}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="30"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID14 ProductCode"
+          DTS:DTSID="{AB5EADC8-7965-422F-9494-4850CE52DFFB}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="25"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID14 ProductPlanCode"
+          DTS:DTSID="{4933B39C-F811-4B21-B5C5-9CC07FB12E4D}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID14 BenefitCoverageTierCode"
+          DTS:DTSID="{38CEB7CE-10CF-4029-8576-3CA5A885B47D}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="1"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID14 UnderwritingClassCode"
+          DTS:DTSID="{FE8239E5-9921-49E4-AB37-6790CB6EA674}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID14 InsuredFirstName"
+          DTS:DTSID="{F608D1AC-FA61-42CA-B80C-6E7AC09B3B70}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID14 InsuredMiddleName"
+          DTS:DTSID="{AD0247A7-8853-4F66-9F6F-712723344583}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID14 InsuredLastName"
+          DTS:DTSID="{C34B82BA-63AC-44C8-ABF6-AB64172FCBAE}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="41"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID14 BenefitCoverageAmount"
+          DTS:DTSID="{5DE0FDCD-4B54-4388-8405-E02A6F202505}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID14 InsuredOccupationCode"
+          DTS:DTSID="{C52FF6C0-95C0-4D5E-81C6-F2C0E8F24F95}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID14 BenefitIssueDate"
+          DTS:DTSID="{0D9F1A15-F63B-44AC-9421-55826214EBC2}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID14 BenefitBillingModeCode"
+          DTS:DTSID="{E73C182C-5590-4E69-9A54-2DE55003B863}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="41"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID14 BenefitModelPremiumAmount"
+          DTS:DTSID="{7CEBEA2A-1BD7-4451-A9EF-381CB7BE8B9A}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="12"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID15 PolicyNumber"
+          DTS:DTSID="{7EECD472-660F-4047-9029-C8B2D704E49A}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID15 BenefitSequenceNumber"
+          DTS:DTSID="{D8FB41FD-313F-4473-8421-0212F33B17C9}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID15 ProductGroupDescription"
+          DTS:DTSID="{5FE2A710-A7D5-4EC0-89E6-55CC0E146549}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="30"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID15 ProductCode"
+          DTS:DTSID="{898E8BB3-2897-4619-A50D-3705C4D8C65F}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="25"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID15 ProductPlanCode"
+          DTS:DTSID="{3BE62458-E502-453D-A1B3-2B7BE44F5E36}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID15 BenefitCoverageTierCode"
+          DTS:DTSID="{154F63E8-8178-4043-B148-B4BD7AA4ADA5}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="1"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID15 UnderwritingClassCode"
+          DTS:DTSID="{252E778A-2DF3-4C5D-A24F-73A1B8E05EF6}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID15 InsuredFirstName"
+          DTS:DTSID="{E24574C8-B2CD-4325-93E2-9CB4A13DFB54}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID15 InsuredMiddleName"
+          DTS:DTSID="{3D6C1166-C0AA-4615-B405-FA51A68F1E97}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID15 InsuredLastName"
+          DTS:DTSID="{0586C5D5-8539-43F7-AE31-A2460379883F}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="41"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID15 BenefitCoverageAmount"
+          DTS:DTSID="{648D0ACC-0656-4C61-871E-C98205D0A8CC}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID15 InsuredOccupationCode"
+          DTS:DTSID="{96C8AE47-F21F-4A8D-8468-22E3C2D04D91}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID15 BenefitIssueDate"
+          DTS:DTSID="{8AD5BC9A-6101-4D90-A47D-5494013502F4}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID15 BenefitBillingModeCode"
+          DTS:DTSID="{1CDCF6CC-355A-4605-BF3F-4B0001C6127F}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="41"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID15 BenefitModelPremiumAmount"
+          DTS:DTSID="{B83C44E7-B8EC-46E4-BE47-B2CD67C9C2D5}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="12"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID16 PolicyNumber"
+          DTS:DTSID="{7CE3E602-DBCB-4F08-9EE3-53B5946A7130}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID16 BenefitSequenceNumber"
+          DTS:DTSID="{3257C22C-826E-4DC6-8E4E-F0C65D95AF2F}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID16 ProductGroupDescription"
+          DTS:DTSID="{DB6367B9-D84A-4FD6-8625-E8646EEBAFBA}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="30"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID16 ProductCode"
+          DTS:DTSID="{3E9F1218-612F-4EB0-8457-2182B7769932}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="25"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID16 ProductPlanCode"
+          DTS:DTSID="{A12F1C89-9000-40C3-BDF9-B2E1901D85D4}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID16 BenefitCoverageTierCode"
+          DTS:DTSID="{471F3FF3-4BC2-4190-B43D-EC8EF819ABAF}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="1"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID16 UnderwritingClassCode"
+          DTS:DTSID="{55311853-68C2-48C0-8F9D-D95EFC3C2F64}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID16 InsuredFirstName"
+          DTS:DTSID="{2E02F26C-763C-4061-A42F-A8EBF094B1BB}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID16 InsuredMiddleName"
+          DTS:DTSID="{C99C7CB8-8187-4D6B-9F68-5A2925AF5B67}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID16 InsuredLastName"
+          DTS:DTSID="{EE463672-BB8B-44C1-B15B-7D19F5ACEEAE}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="41"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID16 BenefitCoverageAmount"
+          DTS:DTSID="{48C620CB-8CD5-4232-A679-F2284FBAE8CE}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID16 InsuredOccupationCode"
+          DTS:DTSID="{23BBE8DA-2131-47E2-813B-668ED2A70AE4}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID16 BenefitIssueDate"
+          DTS:DTSID="{A23E1EE5-5026-4F34-B920-1B21D0440211}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID16 BenefitBillingModeCode"
+          DTS:DTSID="{1322ED6B-370A-467E-8B55-353C3819EEA3}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="41"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID16 BenefitModelPremiumAmount"
+          DTS:DTSID="{3C78BB6D-E712-4D43-A8F2-9D8C95A5E34F}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="12"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID17 PolicyNumber"
+          DTS:DTSID="{4290B47B-9DEF-4800-B0FF-94F9AB3D1CFC}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID17 BenefitSequenceNumber"
+          DTS:DTSID="{72164352-1413-49E5-B837-3E68671DE029}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID17 ProductGroupDescription"
+          DTS:DTSID="{83270166-342E-4F06-A5B6-40AE243D0D9F}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="30"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID17 ProductCode"
+          DTS:DTSID="{E663B047-7CFB-42B6-8E85-3E01E0355771}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="25"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID17 ProductPlanCode"
+          DTS:DTSID="{CBC58B53-9E87-4F7D-937F-9ABAAEA8566B}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID17 BenefitCoverageTierCode"
+          DTS:DTSID="{6ECB7183-7103-43CD-A508-8F74D87FAA42}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="1"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID17 UnderwritingClassCode"
+          DTS:DTSID="{DD4F8589-F36B-4A60-8B7C-2F8DBA49A37E}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID17 InsuredFirstName"
+          DTS:DTSID="{996358C0-1BC2-4DBA-B10E-98F7D9B4A30C}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID17 InsuredMiddleName"
+          DTS:DTSID="{5D5D1A48-A79A-4E7D-83C9-13D54C12C930}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID17 InsuredLastName"
+          DTS:DTSID="{347B4103-FE5A-44C8-A40E-927A563A4C0A}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="41"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID17 BenefitCoverageAmount"
+          DTS:DTSID="{9FC40B33-06E0-43AA-AA4E-FE24AEC0D57E}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID17 InsuredOccupationCode"
+          DTS:DTSID="{569C6679-EFF8-48C5-BB69-5880D6C89B82}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID17 BenefitIssueDate"
+          DTS:DTSID="{2DE73DA8-F7DB-41F3-B443-8C9510339239}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID17 BenefitBillingModeCode"
+          DTS:DTSID="{C5DDCF92-FE46-4B36-A042-F39AFE49E883}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="41"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID17 BenefitModelPremiumAmount"
+          DTS:DTSID="{FFFBB30E-2729-4D04-8640-2E8A7D61DE90}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="12"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID18 PolicyNumber"
+          DTS:DTSID="{91C89EA4-597C-45E1-B463-D98322F328FF}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID18 BenefitSequenceNumber"
+          DTS:DTSID="{05014EF2-5E92-4855-8CB2-12156F8E75A1}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID18 ProductGroupDescription"
+          DTS:DTSID="{DDAF6E18-7809-4AE5-8627-219EC1E892B9}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="30"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID18 ProductCode"
+          DTS:DTSID="{7E6FFBC9-BD1C-4AA3-B042-4BE4F80382E7}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="25"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID18 ProductPlanCode"
+          DTS:DTSID="{4389B922-F4AB-4EED-AA8C-6136D9D61F85}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID18 BenefitCoverageTierCode"
+          DTS:DTSID="{AC14345B-377F-4900-9567-27DB82E50103}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="1"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID18 UnderwritingClassCode"
+          DTS:DTSID="{E072B8E2-E7B4-4AAC-9829-77850D2CE300}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID18 InsuredFirstName"
+          DTS:DTSID="{8FB29683-9084-490F-B74D-EFB4A1364734}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID18 InsuredMiddleName"
+          DTS:DTSID="{AEC3158E-6ECB-4243-9CA7-921DB8DE1591}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID18 InsuredLastName"
+          DTS:DTSID="{D19FABD4-5361-41A2-857C-E033D256FA5C}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="41"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID18 BenefitCoverageAmount"
+          DTS:DTSID="{60493B37-4338-4E9B-94C8-C29A0A69BA1E}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID18 InsuredOccupationCode"
+          DTS:DTSID="{E864F494-06E8-4BBD-A894-71D6150B4A53}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID18 BenefitIssueDate"
+          DTS:DTSID="{547008BF-B497-448A-B419-9CE38501B045}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID18 BenefitBillingModeCode"
+          DTS:DTSID="{58781884-B041-48ED-828B-736AF5C8D314}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="41"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID18 BenefitModelPremiumAmount"
+          DTS:DTSID="{C5D25681-ED4B-4A02-A3E0-4FFE0B931A61}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="12"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID19 PolicyNumber"
+          DTS:DTSID="{4ABD6F97-B32D-4000-92BF-EA3BD5A0C58F}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID19 BenefitSequenceNumber"
+          DTS:DTSID="{F2FC12E8-26A7-488C-91BD-8CD938A77CA4}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID19 ProductGroupDescription"
+          DTS:DTSID="{74C8B648-B719-4425-A6B6-181C285B32F2}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="30"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID19 ProductCode"
+          DTS:DTSID="{D52A2704-3A9C-4419-8DD9-605878C70A69}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="25"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID19 ProductPlanCode"
+          DTS:DTSID="{289548CD-0F6F-4800-AE76-DE435D932043}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID19 BenefitCoverageTierCode"
+          DTS:DTSID="{072BC28B-5E30-42AB-9B2C-4BA7B3A60AB0}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="1"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID19 UnderwritingClassCode"
+          DTS:DTSID="{5314C3DE-E675-4214-9D38-3D8E28FF09AD}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID19 InsuredFirstName"
+          DTS:DTSID="{3A74BC86-844E-4CC6-9304-24EE0883961E}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID19 InsuredMiddleName"
+          DTS:DTSID="{A3632D5D-21FB-4177-BC2D-B8193E8D8AAA}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID19 InsuredLastName"
+          DTS:DTSID="{42DA676D-578C-4184-B848-DBBD61F3A317}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="41"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID19 BenefitCoverageAmount"
+          DTS:DTSID="{8795757D-94B9-440D-9278-86753B308CE8}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID19 InsuredOccupationCode"
+          DTS:DTSID="{BDCD028C-22F2-41A5-BFD1-1765E2F79F35}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID19 BenefitIssueDate"
+          DTS:DTSID="{BE5498E3-44A3-4076-82AB-57B65719CDA0}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID19 BenefitBillingModeCode"
+          DTS:DTSID="{4D24A26A-8A16-4197-BC23-E2B7C16FA472}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="41"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID19 BenefitModelPremiumAmount"
+          DTS:DTSID="{DD5A90C0-C79E-498B-93C7-B813E72960DD}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="12"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID20 PolicyNumber"
+          DTS:DTSID="{6C497DA1-A43A-466B-A60D-8582C72C9C5C}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID20 BenefitSequenceNumber"
+          DTS:DTSID="{91DA97EC-C981-4530-B4BF-54146DBB62DF}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID20 ProductGroupDescription"
+          DTS:DTSID="{8EA92708-3249-4807-A800-02B10EA84AE3}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="30"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID20 ProductCode"
+          DTS:DTSID="{6EE9A428-9871-4B2E-AA95-8C9ACCF146E8}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="25"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID20 ProductPlanCode"
+          DTS:DTSID="{6F0CE467-5FF1-44A2-BF04-E8F896DBFB69}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID20 BenefitCoverageTierCode"
+          DTS:DTSID="{B3D502F0-BD4D-4EEB-BD06-56B7CBEC4DAB}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="1"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID20 UnderwritingClassCode"
+          DTS:DTSID="{CF889857-A7A3-40E5-8BF6-7A76115CD02D}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID20 InsuredFirstName"
+          DTS:DTSID="{4618B50E-BAD5-46C5-999E-1C6D70E65B66}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID20 InsuredMiddleName"
+          DTS:DTSID="{9D7249ED-F47D-4BC6-A536-971B6132C893}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID20 InsuredLastName"
+          DTS:DTSID="{C166BC8D-7CA1-4DA2-9E6C-6E849F6F38D4}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="41"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID20 BenefitCoverageAmount"
+          DTS:DTSID="{29A8B352-BBEC-44FE-A01D-01EF1743DB69}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID20 InsuredOccupationCode"
+          DTS:DTSID="{A9F43334-A1D2-4738-933C-D72AD82A1B14}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID20 BenefitIssueDate"
+          DTS:DTSID="{FC1897A5-AB22-4169-9CC1-6FF298DF0FBF}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID20 BenefitBillingModeCode"
+          DTS:DTSID="{5B92F091-9E73-4B42-90F4-75E29CB932A3}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x000D__x000A_"
+          DTS:MaximumWidth="41"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ID20 BenefitModelPremiumAmount"
+          DTS:DTSID="{4EC57212-8649-4661-83D4-BF2D8A8546E9}"
+          DTS:CreationName="" />
+      </DTS:FlatFileColumns>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="SFTP"
+  DTS:DTSID="{6174103D-157A-4EB1-B868-43A0721BF601}"
+  DTS:CreationName="ZS-SFTP">
+  <DTS:PropertyExpression
+    DTS:Name="Password">@[$Project::SFTP_Password]</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="ServerName">@[$Project::SFTP_ServerName]</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="UserName">@[$Project::SFTP_UserName]</DTS:PropertyExpression>
+  <DTS:ObjectData>
+    <ConnectionManager
+      ConnectionString="Protocol=Sftp;ServerName=files.imprivia.com;Port=22;LogonType=Normal;UserName=ftp_5star;Domain=;EncryptionMode=None;KeyFilePath=;ClientCertFilePath=;Account=;VerifyChecksum=False;IgnoreCertErrors=False;MinSslTlsVersion=Any;MaxSslTlsVersion=Any;DoNotReuseSslSessions=False;DoNotReuseControlConnectionSession=False;ProxyType=None;ProxyAuthMode=Basic;ProxyServer=;ProxyPort=1080;ProxyUserName=;ProxyDomain=;TransferMode=Binary;TrustedFingerprints=;MaxUploadSpeedKbps=0;MaxDownloadSpeedKbps=0;UseActiveMode=False;EnableCompression=False;EnableRestoreDateTime=False;DateTimeItemsForRestore=Default;Timeout=60;DefaultDirectory=;TreatUnknownItemsAsFiles=False;DisableSftp4=False;DisableTransferQueue=False;UseSmallPackets=False;WaitForServerWelcomeMessage=False;MinimumKeySize=512;PreferredHostKeyAlgorithm=;KeyExchangeAlgorithms=;HostKeyAlgorithms=;MacAlgorithms=;EncryptionAlgorithms=;DoNotSendSignals=False;DoNotSendAbort=False;KeepAliveDuringTransfer=False;PauseBeforeUploadClose=False;SslDoNotInsertEmptyFragment=False;UseLargeBuffer=False;LegacyGroupExchangeMode=Default;OtherOptions=;RetainSameConnection=False">
+      <Password
+        Sensitive="1"
+        p4:Salt="cJm0LBVmOg=="
+        p4:IV="sxul2EmCr74=" xmlns:p4="www.microsoft.com/SqlServer/SSIS">At7Bu6r4AchVEL5bz9dXr07gDnf4YdH7PfKDJ36TDqOn6NTL0MXeQW9Hzx6OBnEnVMYjRuGIF2k=</Password>
+    </ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="AFBA_DW_Staging"
+  DTS:DTSID="{F53546B2-6CBD-43D0-BFDC-5E1E1A8D0FA0}"
+  DTS:CreationName="OLEDB">
+  <DTS:PropertyExpression
+    DTS:Name="ConnectionString">@[$Project::AFBA_DW_Staging_ConnectionString]</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="Password">@[$Project::AFBA_DW_Staging_Password]</DTS:PropertyExpression>
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=ASHV2K12DDMSQL;User ID=dw_etl;Initial Catalog=AFBA_DW_Staging;Provider=SQLNCLI11.1;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1"
+        p4:Salt="8kcVvkcnZw=="
+        p4:IV="Ru4nUUdQguM=" xmlns:p4="www.microsoft.com/SqlServer/SSIS">rjq3tmc8N9+cC4ffcim+oueP6Ik1mKbu2qrT6dX30daDfnl+0OxrFj5qXPKNmb7wy6suPZKJBpuZwZMJ15KNgvTOVoPgyDlYYCKCqQ1vhaCI52XL7pWkzsx2yo4x2FfNQbeRvlyaOSHYsUu/LFO+GEdwyqMo0/YXODRP/A/h7WY=</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

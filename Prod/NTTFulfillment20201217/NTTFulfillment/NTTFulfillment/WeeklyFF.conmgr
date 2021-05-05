@@ -1,0 +1,308 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="WeeklyFF"
+  DTS:DTSID="{DC472570-5208-4102-927D-B61462BB0BF5}"
+  DTS:CreationName="FLATFILE">
+  <DTS:PropertyExpression
+    DTS:Name="ConnectionString">@[$Project::FF_ConnectionStringWeekly]</DTS:PropertyExpression>
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:Format="Delimited"
+      DTS:LocaleID="1033"
+      DTS:HeaderRowDelimiter="_x000D__x000A_"
+      DTS:ColumnNamesInFirstDataRow="True"
+      DTS:RowDelimiter=""
+      DTS:TextQualifier="_x003C_none_x003E_"
+      DTS:CodePage="1252"
+      DTS:ConnectionString="\\ashv2k12DDMSQL\SSIS\NTTWeeklyFullfillmentExtract\Source\FulfillmentWeeklyReports.txt">
+      <DTS:FlatFileColumns>
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="GroupID"
+          DTS:DTSID="{4698C5ED-B015-4D12-932D-DCA851D7893F}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="30"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="GroupName"
+          DTS:DTSID="{F49D5804-828B-44ED-8EA9-0D586A0FCE4A}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="GroupAddressLine1"
+          DTS:DTSID="{F531F846-2A0E-4B04-9F44-DC891CB35DBC}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="GroupAddressLine2"
+          DTS:DTSID="{B61109DF-7059-49A8-8990-CA9337FDF53F}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="GroupAddressCityName"
+          DTS:DTSID="{840ACD92-E9A1-4CE3-B08C-30DC51B83420}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="GroupBillingStateCode"
+          DTS:DTSID="{D81E03A4-ED7A-4D19-A2B0-8BA259E934B9}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="5"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="GroupAddressZipCode"
+          DTS:DTSID="{ABD227C4-09AC-43C9-9D52-7EB422ABF437}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="OwnerFirstName"
+          DTS:DTSID="{63E9CC8A-2E8C-4643-AF74-5FBECCD25A84}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="OwnerMiddleName"
+          DTS:DTSID="{358A9046-3546-4BC6-AFBD-9A81C79F34D3}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="OwnerLastName"
+          DTS:DTSID="{9D46A66F-5FA7-448A-BE8E-5CD0F7CE1C7B}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="35"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="OwnerAddressLine1"
+          DTS:DTSID="{3C474FD6-271F-4E85-8A1D-06DF08787B1F}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="35"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="OwnerAddressLine2"
+          DTS:DTSID="{A449EA68-6481-4580-A1D0-5BA90D977068}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="30"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="OwnerCityName"
+          DTS:DTSID="{E3782081-2278-49D4-98C4-BD6A87E3842F}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="OwnerAddressStateCode"
+          DTS:DTSID="{908984DE-D47A-4AE7-A619-509C55AED778}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="5"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="OwnerAddressZipCode"
+          DTS:DTSID="{9915B220-3F86-4A50-8F8C-04E19BC4E93B}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="12"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="PolicyNumber"
+          DTS:DTSID="{D7FA1D74-069E-4426-AE7B-C7A0FD9708F1}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:DataType="2"
+          DTS:TextQualified="True"
+          DTS:ObjectName="BenefitSequenceNumber"
+          DTS:DTSID="{0544F84F-D6C4-4A0D-8E77-B1E551298E74}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ProductGroupDescription"
+          DTS:DTSID="{F9D5E458-87F8-47A9-A6FC-652BA1DE4100}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="30"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ProductCode"
+          DTS:DTSID="{D6D791C6-D7DA-4A1F-84BA-1A806622670C}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="25"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ProductPlanCode"
+          DTS:DTSID="{567F723F-7704-4769-883E-80DB72F5D3B3}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="BenefitCoverageTierCode"
+          DTS:DTSID="{A7CAAFDC-7FC3-4E8B-A4B5-B7FE4EA38BF5}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="1"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="UnderwritingClassCode"
+          DTS:DTSID="{0E0EE8AC-F077-4D20-8307-131796624376}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="InsuredFirstName"
+          DTS:DTSID="{0B383027-2804-4D3B-AF59-9D0295DB49FD}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="InsuredMiddleName"
+          DTS:DTSID="{99222122-6E8E-43FD-83B9-C6E78B8C1061}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="40"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="InsuredLastName"
+          DTS:DTSID="{2DF70FF9-A8FB-4FEC-8C15-528103C64A49}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:DataType="131"
+          DTS:DataPrecision="15"
+          DTS:DataScale="2"
+          DTS:TextQualified="True"
+          DTS:ObjectName="BenefitCoverageAmount"
+          DTS:DTSID="{BFCE13E3-0220-461C-8AD6-39C2DDE6BA4E}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="InsuredOccupationCode"
+          DTS:DTSID="{75666C79-73C8-416E-9181-428C27207B0A}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:DataType="133"
+          DTS:TextQualified="True"
+          DTS:ObjectName="BenefitIssueDate"
+          DTS:DTSID="{13CF6591-1294-475A-A753-3C1059400F29}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:DataType="2"
+          DTS:TextQualified="True"
+          DTS:ObjectName="BenefitBillingModeCode"
+          DTS:DTSID="{1AD9C9CF-8620-48A5-90B2-5FDEA2D4CE8A}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:DataType="131"
+          DTS:DataPrecision="9"
+          DTS:DataScale="2"
+          DTS:TextQualified="True"
+          DTS:ObjectName="BenefitModePremiumAmount"
+          DTS:DTSID="{642FEC38-B40F-4F04-8F04-A3BD7B7348BE}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:DataType="3"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Counts"
+          DTS:DTSID="{4594B78F-24DA-441E-BD46-FD7A29127E2C}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x000D__x000A_"
+          DTS:MaximumWidth="6"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Reason"
+          DTS:DTSID="{7306405B-6E2C-428A-9884-57ED9BEADE07}"
+          DTS:CreationName="" />
+      </DTS:FlatFileColumns>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
